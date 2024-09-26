@@ -1,0 +1,28 @@
+{
+	"name": "@zidhuss/otel-bun-process-detector",
+	"version": "0.1.0",
+	"keywords": ["bun", "opentelemetry"],
+	"homepage": "https://github.com/zidhuss/otel-bun",
+	"license": "Apache-2.0",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "bun build.ts && bun run build:declaration",
+		"build:declaration": "tsc --outDir dist --skipLibCheck --declaration --emitDeclarationOnly --isolatedDeclarations src/index.ts"
+	},
+	"type": "module",
+	"files": ["dist", "LICENSE", "README.md"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zidhuss/otel-bun.git"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@opentelemetry/resources": "^1.26.0",
+		"@opentelemetry/semantic-conventions": "^1.27.0"
+	}
+}
