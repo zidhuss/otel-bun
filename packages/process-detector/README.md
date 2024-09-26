@@ -42,4 +42,4 @@ const sdk = new NodeSDK({
 })
 ```
 
-[^1: [NodeJS Process Detector](https://github.com/open-telemetry/opentelemetry-js/blob/2f919a43fd2d8067d39d573c6e03b830dee516f0/packages/opentelemetry-resources/src/detectors/platform/node/ProcessDetectorSync.ts#L50-L52)
+[^1]: [NodeJS Process Detector](https://github.com/open-telemetry/opentelemetry-js/blob/2f919a43fd2d8067d39d573c6e03b830dee516f0/packages/opentelemetry-resources/src/detectors/platform/node/ProcessDetectorSync.ts#L50-L52)
